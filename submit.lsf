@@ -1,0 +1,10 @@
+#!/bin/bash
+#BSUB -P CHM137
+#BSUB -J psana2
+#BSUB -W 00:10          
+#BSUB -nnodes 1
+#BSUB -e error.%J.log 
+#BSUB -o output.%J.log 
+
+source env.sh
+jsrun -n 1 -a 10 -c 1 -g 1 python test_mpi.py

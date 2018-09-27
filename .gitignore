@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# Psana
+lcls2/
+conda/
+
 # Distribution / packaging
 .Python
 build/

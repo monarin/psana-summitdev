@@ -5,3 +5,4 @@ size = comm.Get_size()
 
 import os
 print('size=%d rank=%d host=%s'%(size, rank, os.environ.get('HOSTNAME')))
+from psana.smdreader import SmdReader

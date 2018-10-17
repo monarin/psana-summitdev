@@ -7,4 +7,5 @@
 #BSUB -o output.%J.log 
 
 #source env.sh
-jsrun -n 4 -a 2 -g 1 ./test.sh
+export https_proxy=https://proxy.ccs.ornl.gov:3128
+jsrun -n 4 -a 1 -g 0 -c 1 curl -s "https://pswww-dev.slac.stanford.edu/calib_ws"
